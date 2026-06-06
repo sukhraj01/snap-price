@@ -11,7 +11,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/valuation', {
+      const response = await fetch('https://snap-price.onrender.com/api/valuation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
